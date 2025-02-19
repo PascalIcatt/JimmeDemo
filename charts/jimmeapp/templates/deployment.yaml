@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "jimmeapp.fullname" . }}-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ include "jimmeapp.name" . }}
+  template:
+    metadata:
+      labels:
+        app: {{ include "jimmeapp.name" . }}
+    spec:
+      containers:
+      - name: web
+        image: "{{ .Values.web.image.repository }}:{{ .Values.web.image.tag }}"
+        imagePullPolicy: {{ .Values.web.image.pullPolicy }}
+        ports:
+        - containerPort: 80

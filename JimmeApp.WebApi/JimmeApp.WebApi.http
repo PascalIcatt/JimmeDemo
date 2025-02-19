@@ -1,0 +1,6 @@
+@JimmeApp.WebApi_HostAddress = http://localhost:5177
+
+GET {{JimmeApp.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
