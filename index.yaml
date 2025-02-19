@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  jimmeapp:
+  - apiVersion: v2
+    appVersion: 1.0.1
+    created: "2025-02-19T14:49:04.936965535Z"
+    description: A Helm chart for jimmeapp
+    digest: e076cf7a52e35587e957316f8fe624e451393fb01acdeeaaada4cbeba8a705f4
+    name: jimmeapp
+    type: application
+    urls:
+    - https://github.com/PascalIcatt/JimmeDemo/releases/download/jimmeapp-1.0.1/jimmeapp-1.0.1.tgz
+    version: 1.0.1
+generated: "2025-02-19T14:49:04.936970394Z"
